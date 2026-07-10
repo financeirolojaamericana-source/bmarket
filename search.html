@@ -68,9 +68,22 @@
 
                 <!-- Promo Banner and Screenshots -->
                 <div class="media-gallery">
-                    <div class="media-item video-item">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hcQHvqiKEAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:none;"></iframe>
+                    <div class="media-item video-item" id="video-thumb" onclick="loadVideo()" style="cursor:pointer; position:relative; overflow:hidden;">
+                        <img src="https://img.youtube.com/vi/hcQHvqiKEAo/maxresdefault.jpg" alt="Trailer" style="width:100%; height:100%; object-fit:cover; display:block;">
+                        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.3);">
+                            <div style="width:56px; height:56px; background:white; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.4);">
+                                <span class="material-symbols-outlined" style="font-size:32px; color:#202124; margin-left:4px;">play_arrow</span>
+                            </div>
+                        </div>
                     </div>
+                    <script>
+                        function loadVideo() {
+                            var el = document.getElementById('video-thumb');
+                            el.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/hcQHvqiKEAo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:none;"></iframe>';
+                            el.onclick = null;
+                            el.style.cursor = 'default';
+                        }
+                    </script>
                     <div class="media-item">
                         <img src="img/screenshot1.webp" alt="Screenshot">
                     </div>
