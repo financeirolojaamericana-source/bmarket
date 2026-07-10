@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a2e;
+    background-color: #202124;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -29,7 +29,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 16px;
-    background: #fff;
+    background: #202124;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -49,7 +49,7 @@ body {
 .play-text {
     font-size: 20px;
     font-weight: 500;
-    color: #5f6368;
+    color: #e8eaed;
 }
 
 .top-nav-right {
@@ -60,7 +60,7 @@ body {
 
 .top-nav-right .material-symbols-outlined {
     font-size: 24px;
-    color: #5f6368;
+    color: #e8eaed;
     cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .icon-btn .material-symbols-outlined {
     font-size: 24px;
-    color: #5f6368;
+    color: #e8eaed;
 }
 
 .avatar-sm {
